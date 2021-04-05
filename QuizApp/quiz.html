@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./quiz.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="questionText">Question Text</h2>
+      </div>
+
+      <ul>
+        <li>
+          <input type="radio" class="answer" id="a" name="answer" />
+          <label id="a_answer" for="a">Question</label>
+        </li>
+        <li>
+          <input type="radio" class="answer" id="b" name="answer" />
+          <label id="b_answer" for="b">Question</label>
+        </li>
+        <li>
+          <input type="radio" class="answer" id="c" name="answer" />
+          <label id="c_answer" for="c">Question</label>
+        </li>
+        <li>
+          <input type="radio" class="answer" id="d" name="answer" />
+          <label id="d_answer" for="d">Question</label>
+        </li>
+      </ul>
+      <button class="buttons" id="submit">Submit</button>
+    </div>
+
+    <script src="./quiz.js"></script>
+  </body>
+</html>

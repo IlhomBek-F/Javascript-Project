@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./recipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input type="text" id="searchMeal" />
+        <button id="search"><i class="fas fa-search"></i></button>
+      </header>
+      <div class="favorite" id="meals-id">
+        <h3>Favotite Meals</h3>
+        <ul class="fav-meals" id="favorite"></ul>
+        <button id="your-favorite-meals" class="favMeals">
+          Your favorite meals
+        </button>
+      </div>
+      <div class="meals" id="meals"></div>
+      <ul id="favorite-meal"></ul>
+    </div>
+
+    <script src="./recipe.js"></script>
+  </body>
+</html>

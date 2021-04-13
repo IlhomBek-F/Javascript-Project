@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffff, #ece9e6);
+  background: linear-gradient(to right, #ffff, #ece9e6);
+  font-family: sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 0 10px 4px #3333331a;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 400px;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header input {
+  background: #eee;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+}
+
+header button {
+  background-color: transparent;
+  color: #aaa;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin-left: 11px;
+  cursor: pointer;
+}
+
+.favorite {
+  background-color: rgb(233, 199, 255);
+  text-align: center;
+  padding: 1rem;
+}
+
+.fav-meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.fav-meals li {
+  position: relative;
+  margin: 5px;
+  width: 85px;
+}
+
+.fav-meals li .clear {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 0;
+  right: -5px;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 1rem;
+}
+.fav-meals li img {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 2x #3333331a;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 70px;
+  width: 70px;
+}
+.fav-meals li:hover .clear {
+  opacity: 1;
+}
+.fav-meals li span {
+  display: inline-block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75px;
+}
+
+.meal {
+  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 3px;
+  margin: 1.5rem;
+  background-color: white;
+}
+
+.meal-header {
+  position: relative;
+}
+
+.meal-header .random {
+  position: absolute;
+  top: 1rem;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+}
+#favorite-meal {
+  margin: 0;
+}
+.meal-header img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.meal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+.meal-body h4 {
+  margin: 0%;
+}
+#favorite-meal .li .favBtn,
+.meal-body .favBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: grey;
+  cursor: pointer;
+  outline: none;
+}
+
+.meal-body .favBtn:active {
+  color: rebeccapurple;
+}
+#favorite-meal .li .youtube,
+.meal-body .youtube {
+  color: red;
+}
+
+.favMeals {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 4px 7px;
+  font-family: cursive;
+  border-radius: 3px;
+  background-color: lightsalmon;
+  cursor: pointer;
+}
+
+.favMeals:hover {
+  background-color: orange;
+}
+
+#favorite-meal li {
+  list-style: none;
+  text-align: center;
+}
+#favorite-meal {
+  padding: 10px;
+}
+#favorite-meal .li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#favorite-meal .li .icons {
+  padding: 9px;
+}
+
+#favorite-meal img {
+  width: 320px;
+  border-radius: 9px;
+}

@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #22254b;
+}
+
+header {
+  background-color: #373b69;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header #myFav {
+  background-color: transparent;
+  outline: none;
+  padding: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+header #myFav.showMe {
+  display: block;
+}
+
+.fav .fa-heart {
+  font-size: 25px;
+  color: white;
+}
+
+.fav #myFav:hover {
+  color: orange;
+}
+header input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.favorite-container {
+  margin: 2rem;
+}
+
+.favorite-container h1 {
+  text-align: center;
+  color: white;
+}
+
+.show {
+  display: flex;
+}
+.show img {
+  width: 350px;
+}
+
+.info-class {
+  width: 800px;
+  color: white;
+  display: inline-block;
+}
+
+.img-class {
+  margin-right: 2rem;
+}
+.movie_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.movie_info h3 {
+  margin: 0;
+}
+
+.movie_info div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.movie_info span {
+  font-weight: bold;
+  background-color: #22254b;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie_info .red {
+  color: red;
+}
+
+.movie_info .orange {
+  color: orange;
+}
+
+.movie_info .green {
+  color: green;
+}
+
+#fav {
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}

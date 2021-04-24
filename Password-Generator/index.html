@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="pass-container">
+      <div class="pass-header">
+        <div class="pass">
+          <span id="pass">djaksls929012</span>
+
+          <button id="copy">Copy to clipboard</button>
+        </div>
+      </div>
+      <div class="pass-body">
+        <div class="form-control">
+          <label for="length">Password Lenght</label>
+          <input id="length" value="15" type="number" min="8" max="40" />
+        </div>
+        <div class="form-control">
+          <label for="upper">Contain UpperCase Letters</label>
+          <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Contain LowerCase Letters</label>
+          <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Contain Numbers</label>
+          <input id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Contain Symbols</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+
+        <button class="generate" id="generate">Generate Password</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pass-container {
+  background-color: rgb(46, 12, 80);
+  min-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pass-header {
+  padding: 1rem;
+}
+
+.pass {
+  background-color: rebeccapurple;
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 2rem;
+  height: 70px;
+  width: 100%;
+}
+
+.pass button {
+  position: absolute;
+  background-color: rgb(29, 2, 56);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  bottom: 0%;
+  left: 50%;
+  transition: opacity 0.3s ease-in, transform 0.3s ease;
+  opacity: 0;
+  transform: translate(-50%, 100%);
+}
+
+.pass:hover button {
+  opacity: 1;
+  cursor: pointer;
+  transform: translate(-50%, 50%);
+}
+
+.pass-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.generate {
+  background-color: #ecb602;
+  display: block;
+  border: none;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  cursor: pointer;
+}

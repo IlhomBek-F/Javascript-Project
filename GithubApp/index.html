@@ -13,15 +13,24 @@
     />
   </head>
   <body>
-    <form id="form">
-      <input
-        autocomplete="off"
-        type="text"
-        id="search"
-        placeholder="Search a Github User"
-      />
-    </form>
-    <main id="main"></main>
+    <div class="favor">
+      <button id="delete" onclick="location.reload()">Delete</button>
+      <form id="form">
+        <input
+          autocomplete="off"
+          type="text"
+          id="search"
+          placeholder="Search a Github User"
+        />
+      </form>
+      <div>
+        <button id="show"><i class="fas fa-heart"></i></button
+        ><span id="count">0</span>
+      </div>
+      <main id="main"></main>
+    </div>
+
+    <div id="favorite"></div>
     <script src="./script.js"></script>
   </body>
 </html>

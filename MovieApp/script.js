@@ -52,6 +52,7 @@ function infoMovie(movie) {
     main.innerHTML = "";
 
     getMyFavoriteMovie();
+    myFavBtn.classList.add("showMe");
   });
 
   main.appendChild(div);
@@ -87,14 +88,17 @@ async function searchMovie(text) {
 }
 
 function addSearchMovie(resp) {
-  console.log(resp.results);
   resp.results.forEach((movie) => {
     const div = document.createElement("div");
     div.classList.add("movie");
     div.innerHTML = `
          
             <img
-                src="${movieImg + movie.poster_path}"
+                src="${
+                  movie.poster_path === null
+                    ? div.classList.add("remove")
+                    : movieImg + movie.poster_path
+                }"
             />
             <div class="movie_info">
               <h3>${movie.title}</h3>
@@ -113,12 +117,12 @@ function addSearchMovie(resp) {
       main.innerHTML = "";
 
       getMyFavoriteMovie();
+      myFavBtn.classList.add("showMe");
     });
     main.appendChild(div);
   });
 
   search.value = "";
-  console.log(resp);
 }
 
 function AddtoLocal(movie) {

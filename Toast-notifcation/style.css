@@ -13,56 +13,23 @@ body {
 
 button {
   background-color: rebeccapurple;
-  border: none;
   color: white;
-  position: fixed;
-  top: 20px;
-  right: 20px;
   padding: 1rem;
-  cursor: pointer;
-  outline: none;
-}
-#btn2 {
-  background-color: rebeccapurple;
+  border-radius: 5px;
   border: none;
-  color: white;
+  font-family: inherit;
+}
+
+#container {
   position: fixed;
-  font-size: 1rem;
-  top: 5px;
+  bottom: 10px;
   right: 10px;
-  padding: 1rem;
-  cursor: pointer;
-  outline: none;
 }
-nav {
+
+.toast {
   background-color: rebeccapurple;
-  position: fixed;
-  top: 0%;
-  right: 0;
-  height: 100vh;
+  border-radius: 5px;
+  color: #fff;
   padding: 2rem;
-  transform: translateX(100%);
-}
-
-nav.active {
-  transform: translateX(0);
-  transition: transform 0.8s ease;
-}
-nav.close {
-  transform: translateX(110);
-  transition: transform 0.8s ease;
-}
-nav ul {
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  padding: 1rem 0;
-  border-bottom: 1px solid white;
-}
-
-nav li a {
-  color: white;
-  text-decoration: none;
+  margin: 1rem;
 }

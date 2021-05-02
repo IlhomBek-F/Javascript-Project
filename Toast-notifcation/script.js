@@ -1,13 +1,19 @@
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const nav = document.getElementById("nav");
+const btn = document.getElementById("btn");
 
-btn1.addEventListener("click", () => {
-  nav.classList.add("active");
+const container = document.getElementById("container");
+btn.addEventListener("click", () => {
+  createNotification();
 });
 
-btn2.addEventListener("click", () => {
-  nav.classList.remove("active");
-  nav.classList.add("close");
-  console.log("heyy");
-});
+function createNotification() {
+  const notif = document.createElement("div");
+  notif.classList.add("toast");
+
+  notif.innerText = "This challenge is crazy!";
+
+  container.appendChild(notif);
+
+  setTimeout(() => {
+    notif.remove();
+  }, 5000);
+}

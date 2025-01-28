@@ -22,8 +22,6 @@ async function getRandom() {
   console.log(reandomMeal);
 
   addMeal(reandomMeal, true);
-
-  // mealInformation(reandomMeal);
 }
 
 async function getMealById(id) {
@@ -48,10 +46,6 @@ async function getMealBySearch(term) {
 
   return meals;
 }
-
-// function mealInformation(mealData) {
-//   console.log(mealData);
-// }
 
 function addMeal(mealData, random = false) {
   const newMealDiv = document.createElement("div");
